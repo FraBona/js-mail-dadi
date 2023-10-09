@@ -15,3 +15,18 @@ for(i = 0; i < lunghezzaArray; i++){
     messageDom.innerHTML = 'la tua mail non si trova nel database';
   }
 }
+
+let user = Math.floor(Math.random() * 6) + 1;
+let bot = Math.floor(Math.random() * 6) + 1;
+
+console.log(user, bot);
+
+if(user > bot){
+  console.log('Hai vinto');
+}
+else if(bot > user){
+  console.log('Il computer ha vinto');
+}
+else{
+  console.log('avete pareggiato');
+}

@@ -7,13 +7,19 @@ console.log(lunghezzaArray);
 
 let messageDom = document.getElementById('message');
 
+let email = false;
+
 for(i = 0; i < lunghezzaArray; i++){
   if(insertEmail == usersEmail[i]){
-    messageDom.innerHTML = 'la tua mail si trova nel database';
+    email = true;
   }
-  else{
-    messageDom.innerHTML = 'la tua mail non si trova nel database';
-  }
+}
+
+if(email == true){
+  messageDom.innerHTML = 'la tua mail si trova nel database';
+}
+else{
+  messageDom.innerHTML = 'la tua mail non si trova nel database';
 }
 
 let user = Math.floor(Math.random() * 6) + 1;
